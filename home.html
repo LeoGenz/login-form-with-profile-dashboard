@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LeoGen Profile Panel</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-image: url(img/flashlight.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .panels-container {
+            display: flex;
+            max-width: 1200px;
+            gap: 20px;
+            width: 100%;            
+            flex-wrap: nowrap;
+        }
+        
+        .panel {
+            background: #272425;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .panel:hover {
+            background: rgb(189, 189, 189);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+        
+        .panel-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: white;
+            border-bottom: 4px solid white;
+            padding-bottom: 10px;
+        }
+
+        .profile-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: white;
+            padding-bottom: 10px;
+        }
+
+        .panel:hover h2, .panel:hover h1 {
+            color: #272425;
+        }
+    </style>    
+</head>
+<body>
+
+    <div class="panels-container">
+        <div class="panel">
+            <div class="panel-title">
+              
+                <h2>Profile</h2>
+            </div>
+            <div class="profile-info">
+                <h1>Leo Gene M. Saavedra</h1>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="panel-title">
+                 <h2>Hobbies</h2>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="panel-title">
+		<h2>Ambition In Life</h2>
+            </div>         
+        </div>
+        
+        <div class="panel">
+            <div class="panel-title">
+		 <h2>Motto In Life</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
