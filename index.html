@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-
-    <div class="login-container">
-        <form class="login-form" onsubmit="Login(event)">
-            <img src="logo1.png" alt="Logo" class="form-logo">
-            
-            <h2>Log in</h2>
-
-            <div class="input-group">
-                <input type="text" id="username" name="username" required>
-                <label>Username</label>
-            </div>
-
-            <div class="input-group">
-                <input type="password" id="password" name="password" required>
-                <label>Password</label>
-            </div>
-
-            <button type="submit" class="login-btn">Login</button>
-        </form>
+    <header>
+    <div class="logo-container">
+        <img src="../img/scc-logo.png" class="scc-logo" alt="SCC Logo">
+        <span>Saavedra Portfolio</span>
     </div>
-
-    <script>
-        function Login(event) {
-            event.preventDefault(); 
+<div class="navbar"> 
+    <nav>
+        <ul class="navbar-links">
+            <li><a href="#" class="menu">Home</a></li>
             
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-            
-            if(username === "Leo" && password === "12345") {
-                localStorage.setItem("Logged in", "true");
-                window.location.href = "home.html"; 
-            } else {
-                alert("Invalid Credentials");
-            }
-        }
-    </script>
+            <li class="dropdown">
+                <a href="#" class="menu">About <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="index4.html" class="link">Profile</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </li>
 
+            <li><a href="projects.html" class="menu">Projects</a></li>
+            <li><a href="certifications.html" class="menu">Certifications</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="menu">Socials <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://www.facebook.com/leogen.manzano" class="link">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/cheese_saaauce/?hl=en" class="link">Instagram</a></li>
+                    <li><a href="https://x.com/leogenctg?s=21" class="link">X</a></li>
+                    <li><a href="https://github.com/LeoGenz">Github</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+</header>
+<div class="home-container">
+    <div class="my-pfp">
+        <img src="../img/leo-pfp.png" alt="My Profile Picture">
+    </div>
+    <div class="about-me">
+        <h1>LEO GENE M. SAAVEDRA</h1>
+        <div class="about-me-content">
+            <p>Hello, my name is Leo Gene M. Saavedra. I'm a student at Saint Columban College, where My program is Computer Science.  I'm fascinated by the future of the web, especially Web3 and its implications for cryptocurrency.  This interest drives me to learn more about the technology and explore the possibilities it presents.</p>
+                
+            <p>I'm also passionate about coding and constantly striving to expand my knowledge and skills. I enjoy the challenge of learning new languages and frameworks, and I'm always eager to experiment and build new things.  I believe in the power of continuous learning and staying current with the latest advancements in the tech world.</p>
+                
+            <p>I value the connections I've made with people, both online and in person. I believe that collaboration and learning from others are essential for growth. I'm ambitious and driven to achieve great things in the future, and I'm excited to see what opportunities lie ahead.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
